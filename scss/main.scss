@@ -1,0 +1,500 @@
+@import "./reset.css";
+
+body {
+    font-family: "Montserrat", sans-serif;
+    /* font-size: 14px; */
+    /* font-weight: 500; */
+    color: ivory;
+    background-color: rgb(193, 143, 125);
+    /* background-color: #1a9169; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.none {
+    display: none !important;
+}
+
+/* Header */
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* background-image: url("./../img/header/header-bg.jpg"); */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Welcome */
+
+.change-lang {
+    position: absolute;
+    /* background: lime; */
+    top: 15px;
+    right: 15px;
+}
+
+select {
+    background: rgb(193, 143, 125);
+    outline: none;
+    /* border-radius: 0; */
+    /* border-color: rgb(193, 143, 125); */
+    /* padding: 5px; */
+    text-shadow: 1px 1px 2px black;
+}
+
+.hi {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hi span {
+    display: block;
+    text-shadow: 1px 1px 2px black;
+}
+
+.img-me {
+    display: block;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.cosmetologist {
+    color: ivory;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+    background: rgb(193, 143, 125);
+    position: relative;
+    animation: text 2s 1;
+}
+
+.helenLaska {
+    color: #fff;
+    font-size: 30px;
+}
+
+@keyframes text {
+    0% {
+        color: rgb(193, 143, 125);
+        margin-bottom: -40px;
+    }
+
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+/* Arrow */
+
+.arrow-down {
+    margin: 30px;
+}
+
+.arrow-down span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    margin: -20px;
+    animation: arrow-down 2s infinite;
+
+    position: absolute;
+    bottom: 130px;
+    left: calc(50% + 5px);
+}
+
+.arrow-down span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow-down span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes arrow-down {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+/* About Me */
+
+h1 {
+    margin: 25px auto 15px;
+    padding: 20px 15px;
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.about-text {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    text-indent: 1.5em;
+    margin-bottom: 5px;
+    text-align: justify;
+    animation: write 2s eases;
+    transition: 1s all;
+}
+
+.sign {
+    text-indent: 1em;
+    margin-bottom: 20px;
+}
+
+@keyframes write {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* services */
+
+.accordion {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid rgb(193, 143, 125);
+}
+
+.accordion__heading {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 0;
+    color: white;
+    background: rgb(193, 143, 125);
+}
+
+.master {
+    background: rgb(173, 130, 114);
+    text-shadow: 1px 1px 2px black;
+}
+
+.accordion__heading:after,
+.accordion__heading:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    top: 50%;
+    right: 20px;
+    background: white;
+    transition: all 0.1s;
+}
+
+.accordion__checkbox:checked ~ .accordion__heading:before {
+    transform: rotate(90deg);
+    opacity: 0;
+    transition: all 0.1s;
+}
+
+.accordion__heading:after {
+    transform: rotate(90deg);
+    transition: all 0.1s;
+}
+
+.accordion__checkbox:checked ~ .accordion__heading:after {
+    transform: rotate(180deg);
+}
+
+.accordion__checkbox {
+    display: none;
+    position: absolute;
+    left: -9999em;
+}
+
+.accordion__checkbox:checked ~ .accordion__content {
+    max-height: 50000px;
+    transition: all 2s;
+}
+
+.accordion__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+    color: rgb(173, 130, 114);
+    background-color: LemonChiffon;
+}
+
+.accordion__content p {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    text-indent: 1.5em;
+    padding: 15px;
+}
+
+.art {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    text-indent: 1.5em;
+    padding: 15px;
+}
+
+.content {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    text-indent: 1.5em;
+    padding: 15px;
+}
+
+.price {
+    margin: 20px auto;
+    display: flex;
+}
+
+#price-src {
+    display: block;
+    margin: auto;
+}
+
+/* Photo */
+
+.photo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.block-photo {
+    width: calc(33.3% - 7px);
+}
+
+/*Слайдер с отзывами*/
+
+/* Route */
+
+.location {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(193, 143, 125);
+    margin: 20px auto;
+    max-width: 350px;
+    // border: none;
+    color: white;
+    padding: 15px 10px;
+    border: 1px solid white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Map */
+
+.google_map {
+    display: flex;
+    justify-content: center;
+}
+
+.look {
+    /* text-align: center; */
+    padding-bottom: 10px;
+}
+
+.tel {
+    border-radius: 100px;
+    margin-bottom: 40px;
+}
+
+.socials {
+    /* margin: 15px auto; */
+    text-align: center;
+    /* text-shadow: 1px 1px 2px black; */
+}
+
+.socials p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.footer-icons p {
+    /* font-weight: 600; */
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.footer-icons-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 15px auto 50px;
+}
+
+.icons {
+    color: white;
+}
+
+// Слайдер отзывов
+
+html,
+body {
+    // height: 100%;
+    // background-color: #333;
+    /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #fff;
+  font-size: 25px; */
+}
+
+.wrapper {
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        padding: 50px 10px;
+    }
+}
+/* Основные стили */
+/* Слайдер */
+.slick-slider {
+    min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Слайд */
+/* Слайд активный */
+/* Слайд основной */
+/* Слайд по центру */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки */
+/* Конкретный слайдер */
+.slider {
+    position: relative;
+    padding: 0px 5px;
+}
+
+@media (max-width: 767px) {
+    .slider {
+        padding: 0px 10px;
+    }
+}
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -30px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 15px;
+    height: 30px;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url("../img/sl-arrow_l.svg") 0 0/100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+    right: 0;
+    background: url("../img/sl-arrow_r.svg") 0 0/100% no-repeat;
+}
+
+.slider .slick-arrow.slick-disabled {
+    opacity: 0.2;
+}
+
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .slick-dots li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+.slider .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.slider__item {
+    padding: 0px 15px;
+}
+
+.slider__item img {
+    max-width: 100%;
+}

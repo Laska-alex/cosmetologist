@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Косметолог</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="shortcut icon" href="./icons/favicon.png" type="image/png">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+
+            <select class="change-lang">
+                <option value="ua">UA</option>
+                <option value="ru" selected>RU</option>
+            </select>
+
+            <div class="hi">
+                <span class="cosmetologist">Косметолог</span>
+                <span class="helenLaska" data-lang="helen">Елена Ласка</span>
+            </div>
+
+            <a href="#about">
+                <div class="arrow-down">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+
+            <!-- <h1>ItGid.info - <span class="lng-unit">создаем многоязычный сайт</span></h1>
+            <h1>ItGid.info - <span class="lng-chip">графический чип </span></h1> -->
+        </div>
+    </header>
+
+    <section class="about_me" id="about">
+        <div class="container">
+            <h1 data-lang="about_me" class="about_me">Обо мне</h1>
+            <p data-lang="text-1" class="about-text">
+                <!-- Привет, я - Елена. Для меня Косметология - это не просто работа, но и хобби и моя сбывшаяся мечта!
+                Именно поэтому я полностью отдаюсь своему делу и, надеюсь, это чувствуют мои клиенты. -->
+            </p>
+            <p data-lang="text-2" class="about-text">
+
+                <!-- Начинать заботиться о своей коже никогда не рано и чем раньше вы начнёте – тем лучше будет эффект и тем
+                чаще вы будете радоваться, глядя в зеркало, и радовать близких Вам людей. -->
+            </p>
+
+            <p data-lang="text-3" class="about-text">
+                <!-- Мне интересно изучать новейшие наработки косметологов, чтобы я могла предложить вам самые актуальные
+                методы поддержания кожи в здоровом состоянии. -->
+            </p>
+
+            <p data-lang="text-4" class="about-text sign">
+                Елена Ласка
+            </p>
+            <p data-lang="helen2" class="about-text sign">
+                Елена Ласка
+            </p>
+
+            <img src="./img/photo_01.jpg" class="img-me" alt="Елена Ласка косметолог">
+
+
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h1 data-lang="list" class="list">Перечень процедур</h1>
+
+            <div class="accordion">
+
+                <section>
+                    <input type="checkbox" class="accordion__checkbox" id="accordion-heading-00">
+                    <label data-lang="clean" class="accordion__heading master" for="accordion-heading-00">Чистка
+                        лица:</label>
+                    <div class="accordion__content">
+
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-01">
+                            <label data-lang="clean-mech" class="accordion__heading" for="accordion-heading-01">-
+                                Механическая
+                                чистка
+                                лица</label>
+                            <div class="accordion__content">
+                                <p data-lang="clean-mech-text">
+                                    Механическая чистка лица
+                                    производится
+                                    мануально. В процедуре
+                                    используется распаривающая гидрогелевая маска, которая будет особенно безопасна
+                                    людям с
+                                    проявлениями купероза. Далее лицо освобождается от излишней сальности и чёрных
+                                    комедонов, удаляются милиумы (просянки) если они имеются на лице. После чистки лица
+                                    наносится поросуживающая маска, которая освежает, глубоко очищает кожу, снимает
+                                    воспаление и покраснение, способствует быстрому заживлению. По желанию в процедуру
+                                    можно добавить противовоспалительный пилинг, который имеет действие и интенсивно
+                                    заживляет воспалительные элементы при высыпаниях на лице.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-02">
+                            <label data-lang="clean-comb" class="accordion__heading" for="accordion-heading-02">-
+                                Комбинированная чистка лица</label>
+                            <div class="accordion__content">
+                                <p data-lang="clean-comb-text">Комбинированная чистка лица проводится также как и
+                                    механическая, но в неё
+                                    дополнительно включена ультразвуковая чистка. Этот вид чистки эффективно очищает
+                                    кожный покров от ороговевших элементов, убирает продукты жизнедеятельности потовых и
+                                    сальных желез, улучшает цвет и выравнивает поверхность лица. Также колебания
+                                    обеспечивают термоэффект – температура внутри клеток повышается. Благодаря этому
+                                    запускаются естественные обменные процессы восстановления.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-04">
+                            <label data-lang="clean-atrvm" class="accordion__heading" for="accordion-heading-04">-
+                                Атровматичная
+                                чистка
+                                лица</label>
+                            <div class="accordion__content">
+                                <p data-lang="clean-atrvm-text">Атровматичная чистка лица рассчитана на щадящее очищение
+                                    ороговевшего слоя кожи без
+                                    механической обработки. Потому она и называется атровматичной, - поскольку является
+                                    достаточно комфортной и кожа после неё очень быстро восстанавливается. Может
+                                    применяться даже для самой чувствительной кожи. После чистки улучшается состояние
+                                    кожи, устраняется излишний блеск, выравнивается текстура кожи. Кожа приобретает
+                                    здоровый оттенок.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-05">
+                            <label data-lang="clean-ultra" class="accordion__heading" for="accordion-heading-05">-
+                                Ультразвуковая чистка лица</label>
+                            <div class="accordion__content">
+                                <p data-lang="clean-ultra-text">Ультразвуковая чистка лица – процедура, позволяющая
+                                    очистить кожу от слоя омертвевших
+                                    клеток. Эта методика аппаратной косметологии использует действие высокочастотных
+                                    звуковых волн. Данная процедура производится при помощи специального ультразвукового
+                                    аппарата. Во время прикосновения ультразвуковой лопатки образуется вибрационная
+                                    волна похожая на облако. Данный вид чистки усиливает внутриклеточный обмен веществ,
+                                    стимулирует работу лимфатической системы. Вибрация во время ультразвуковой чистки
+                                    действует также как микро-массаж, действие ультразвука глубоко очищает кожу от
+                                    омертвевших клеток, загрязнения, жира, комедонов, пота, при этом не повреждая
+                                    верхний слой эпидермиса и не вызывая покраснений и припухлостей. Благодаря
+                                    стимуляции обмена веществ, ультразвуковая чистка способствует выработке эластина и
+                                    коллагена, усилению обновления тканей.
+                                </p>
+                            </div>
+                        </section>
+
+
+
+                    </div>
+                </section>
+
+                <section>
+                    <input type="checkbox" class="accordion__checkbox" id="accordion-heading-10">
+                    <label data-lang="peelings" class="accordion__heading master"
+                        for="accordion-heading-10">Пилинги:</label>
+                    <div class="accordion__content">
+
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-11">
+                            <label data-lang="peel-milk" class="accordion__heading" for="accordion-heading-11">-
+                                Молочный пилинг
+                                с
+                                DMAE</label>
+                            <div class="accordion__content">
+                                <p data-lang="peel-milk-text">Молочный пилинг с DMAE – безинъекционное, безболезненное
+                                    введения DMAE.
+                                    Рекомендован
+                                    для всех типов кожи, в особенности сухой и чувствительной. Обеспечивает моментальный
+                                    лифтинг, увлажняет, осветляет, повышает тургор и способствует сиянию кожи.
+                                </p>
+                            </div>
+                        </section>
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-12">
+                            <label data-lang="peel-light" class="accordion__heading" for="accordion-heading-12">- Лёгкий
+                                пилинг
+                                для видимого омоложения.</label>
+                            <div class="accordion__content">
+                                <p data-lang="peel-light-text">Лёгкий пилинг для видимого омоложения. Всесезонный пилинг
+                                    с мгновенным
+                                    результатом:
+                                    выравнивается рельеф, разглаживаются мелкие морщины, повышается увлажнённость и
+                                    упругость кожи, стимулируется уплотнение дермы, улучшается цвет и внешний вид кожи.
+                                    Пилинг очень деликатный, поэтому его можно использовать для самой чувствительной
+                                    кожи.
+                                </p>
+                            </div>
+                        </section>
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-13">
+                            <label data-lang="peel-phytic" class="accordion__heading" for="accordion-heading-13">-
+                                Фитиновый пилинг
+                                с
+                                DMAE</label>
+                            <div class="accordion__content">
+                                <p data-lang="peel-phytic-text">Фитиновый пилинг с DMAE – является сильным
+                                    антиоксидантом, осветляет и
+                                    имеет
+                                    противовоспалительные свойства, которые способствуют не только эффективному
+                                    предотвращению появления пигментных пятен, но и быстрому устранению уже
+                                    существующих. Также фитиновая кислота обладает хорошим омолаживающим и лифтинговым
+                                    действием.
+                                </p>
+                            </div>
+                        </section>
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-14">
+                            <label data-lang="peel-complex" class="accordion__heading" for="accordion-heading-14">-
+                                Комплексный
+                                пилинг для
+                                век.</label>
+                            <div class="accordion__content">
+                                <p data-lang="peel-complex-text">Комплексный пилинг для век. Высокоэффективный
+                                    поверхностный химический
+                                    пилинг для
+                                    зоны вокруг глаз. Усиливает микроциркуляцию в тканях, стимулирует клеточный обмен,
+                                    способствует удержанию влаги в коже, благодаря чему разглаживаются мелкие морщины,
+                                    уходят отеки и припухлости (мешки под глазами), приостанавливается процесс старения,
+                                    способствует значительному омоложению кожи в зоне вокруг глаз.
+                                </p>
+                            </div>
+                        </section>
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-15">
+                            <label data-lang="peel-problem" class="accordion__heading" for="accordion-heading-15">-
+                                Пилинг для проблемной кожи.</label>
+                            <div class="accordion__content">
+                                <p data-lang="peel-problem-text">Пилинг для проблемной кожи. Высокоэффективный
+                                    поверхностный химический
+                                    пилинг и
+                                    комплекс растительных экстрактов с противовоспалительным эффектом. Улучшает
+                                    регенерацию и интенсивно заживляет воспалительные элементы, способствует активизации
+                                    процессов восстановления кожи и нейтрализует чрезмерное выделение кожного сала.
+                                    Уникальный состав способствует активному оздоровлению кожи и повышению местного
+                                    иммунитета.
+                                </p>
+                            </div>
+                        </section>
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-16">
+                            <label data-lang="carboxy-problem" class="accordion__heading" for="accordion-heading-16">-
+                                Карбокситерапия
+                                (для
+                                проблемной кожи)</label>
+                            <div class="accordion__content">
+                                <p data-lang="carboxy-problem-text">Карбокситерапия (для проблемной кожи). Это процедура
+                                    увлажнения и
+                                    повышения
+                                    иммунитета кожи, коррекция высыпаний, избавления от избыточной сальности кожи,
+                                    дерматозов, снижение чувствительности кожи. Прекрасно детоксифицирует и осветляет
+                                    кожу. Также после процедуры карбокситерапии применяется успокаивающая маска.
+                                    Закрывается процедура интенсивной сывороткой anti-acne, которая усиливает эффект
+                                    проведенной процедуры.
+                                </p>
+                            </div>
+                        </section>
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-17">
+                            <label data-lang="carboxy-lift" class="accordion__heading" for="accordion-heading-17">-
+                                Карбокситерапия (для лифтинга кожи)</label>
+                            <div class="accordion__content">
+                                <p data-lang="carboxy-lift-text">Карбокситерапия (для лифтинга кожи). Эта процедура
+                                    улучшает качество
+                                    кожи, прекрасно
+                                    увлажняет и подтягивает овал лица. Убирает вялость и атоничность кожи, делает её
+                                    гладкой и бархатистой, сокращает проявления морщин и линий. Видимый эффект уже после
+                                    первой процедуры. Также дополнительно после процедуры карбокситерапии применятся
+                                    омолаживающая маска. Закрывается процедура сывороткой для интенсивного омоложения
+                                    3D-лифтинг, которая усиливает эффект проведенной процедуры.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <section>
+                    <input type="checkbox" class="accordion__checkbox" id="accordion-heading-20">
+                    <label data-lang="mask" class="accordion__heading master" for="accordion-heading-20">Маски:</label>
+                    <div class="accordion__content">
+
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-21">
+                            <label data-lang="mask-alginate" class="accordion__heading" for="accordion-heading-21">-
+                                Альгинатная
+                                маска</label>
+                            <div class="accordion__content">
+                                <p data-lang="mask-alginate-text">Альгинатная маска увлажняет, улучшает цвет лица,
+                                    создаёт эффект
+                                    лифтинга, обладает
+                                    противоотечными свойствами, идеальна для зрелой кожи (35+). В данной процедуре
+                                    используются две маски на выбор: полипептидная с мощным лифтинговым и увлажняющим
+                                    эффектом и маска с миорелаксирующим эффектом, которая прекрасно разглаживает и
+                                    заполняет морщины, способствует лифтингу и увлажнению. Также используется сыворотка,
+                                    усиливающая эффект применения маски.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-22">
+                            <label data-lang="mask-gidrogel" class="accordion__heading" for="accordion-heading-22">-
+                                Гидрогелевая
+                                маска (с
+                                лепестками розы)</label>
+                            <div class="accordion__content">
+                                <p data-lang="mask-gidrogel-text">Гидрогелевая маска (с лепестками розы) - уникальная
+                                    гидрогелевая маска с
+                                    лепестками
+                                    розы дарит коже приятные ощущения свежести и увлажнённости. Сочетание коллагена,
+                                    лепестков и экстракта розы мгновенно улучшают внешний вид кожи, возвращают ей
+                                    упругость и эластичность. Маска подходит для всех типов кожи – особенно для сухой и
+                                    чувствительной.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <section>
+                    <input type="checkbox" class="accordion__checkbox" id="accordion-heading-30">
+                    <label data-lang="massage" class="accordion__heading master"
+                        for="accordion-heading-30">Массажи:</label>
+                    <div class="accordion__content">
+
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-31">
+                            <label data-lang="massage-classic" class="accordion__heading" for="accordion-heading-31">-
+                                Классический
+                                массаж</label>
+                            <div class="accordion__content">
+                                <p data-lang="massage-classic-text">Классический массаж – эта процедура помогает
+                                    добиться продления
+                                    молодости кожи и
+                                    дарит прекрасные минуты полного расслабления.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-32">
+                            <label data-lang="massage-plastic" class="accordion__heading" for="accordion-heading-32">-
+                                Пластический
+                                массаж</label>
+                            <div class="accordion__content">
+                                <p data-lang="massage-plastic-text">Пластический массаж – методика механического
+                                    воздействия на кожу, после
+                                    которого она
+                                    приобретает упругость и свежесть. Считается самым эффективным способом вернуть
+                                    утерянные контуры и овал лица, также убрать явные возрастные изменения.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-33">
+                            <label data-lang="massage-Jacquet" class="accordion__heading" for="accordion-heading-33">-
+                                Массаж по
+                                Жаке</label>
+                            <div class="accordion__content">
+                                <p data-lang="massage-Jacquet-text">Массаж по Жаке – в процессе процедуры нормализуется
+                                    кровообращение,
+                                    рассасываются
+                                    подкожные воспаления, активизируются обменные процессы.
+                                </p>
+                            </div>
+                        </section>
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-34">
+                            <label data-lang="massage-hair" class="accordion__heading" for="accordion-heading-34">-
+                                Массаж
+                                волосистой части
+                                головы</label>
+                            <div class="accordion__content">
+                                <p data-lang="massage-hair-text">Массаж волосистой части головы - активизирует
+                                    кровообращения и кровоток,
+                                    улучшает
+                                    питание мягких тканей, снимает мышечное напряжение, улучшает настроение и общее
+                                    состояние, уменьшает головные боли, расслабление мышц шейно-воротниковой зоны,
+                                    снятие спазма, нормализация артериального давления. Улучшение роста волос при
+                                    аллопеции, избавление от проблем жирности волос, улучшение цвета лица, уменьшение
+                                    выраженности морщин, заломов, решение проблемы опущения овала лица.
+                                </p>
+                            </div>
+                        </section>
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-35">
+                            <label data-lang="express" class="accordion__heading" for="accordion-heading-35">- Экспресс
+                                омоложение
+                                (альгинаты + массаж).</label>
+                            <div class="accordion__content">
+                                <p data-lang="express-text">Экспресс омоложение (альгинаты + массаж). Данная процедура
+                                    включает в
+                                    себя
+                                    классический массаж, который оказывает омолаживающее, лимфодренажное, подтягивающее
+                                    действие, дарящее полное расслабляющее действие. Эта процедура хороша в том случае,
+                                    когда есть желание совместить отдых и избавление от накопившейся усталости с
+                                    омолаживающим действием с проработкой всех мышц лица. После процедуры массажа
+                                    применяется омолаживающая сыворотка, сверху накладывается альгинатная маска, которая
+                                    пластифицируясь может моделировать овал лица и оказывать омолаживающее и
+                                    подтягивающее действие.
+                                </p>
+                            </div>
+                        </section>
+
+                    </div>
+                </section>
+
+                <section>
+                    <input type="checkbox" class="accordion__checkbox" id="accordion-heading-40">
+                    <label data-lang="micro" class="accordion__heading master"
+                        for="accordion-heading-40">Микроинъекции:</label>
+                    <div class="accordion__content">
+
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-41">
+                            <label data-lang="micro-mesotherapy" class="accordion__heading" for="accordion-heading-41">-
+                                Фракционная
+                                мезотерапия:</label>
+                            <div class="accordion__content">
+                                <p data-lang="micro-mesotherapy-text">Фракционная мезотерапия (Дермаштамп) – процедура
+                                    способствует ускорению
+                                    выработки
+                                    коллагеновых и эластиновых волокон в коже. Эта процедура уменьшает период
+                                    регенерации и восстановления кожи, позволяет добиться значительного эстетического
+                                    эффекта, не нуждается в дополнительной анестезии. В данной процедуре используется
+                                    сыворотка Demax.
+                                </p>
+                            </div>
+                        </section>
+
+
+
+                    </div>
+                </section>
+
+                <section>
+                    <input type="checkbox" class="accordion__checkbox" id="accordion-heading-50">
+                    <label data-lang="other" class="accordion__heading master"
+                        for="accordion-heading-50">Прочее:</label>
+                    <div class="accordion__content">
+
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-51">
+                            <label data-lang="other-problem" class="accordion__heading" for="accordion-heading-51"> -
+                                Уход за
+                                проблемной
+                                кожей</label>
+                            <div class="accordion__content">
+                                <p data-lang="other-problem-text"> В уход входит массаж по Жаке, который
+                                    способствуетрассасыванию
+                                    подкожных воспаленных
+                                    элементов, нормализует кровообращение и активизацию обменных процессов. Далее
+                                    наносится маска для проблемной кожи на основеактивированного угля. Маска влияет на
+                                    патогенез акне, очищает кожу и способствует сужению расширенных пор, снимает
+                                    воспаления, нормализует обменные процессы, регулирует деятельность сальных желез.
+                                    Процедура закрывается пилингом для проблемной кожи, который эффективно
+                                    восстанавливает кожу и нейтрализует чрезмерное выделение себума, заживляет
+                                    воспаленные элементы, способствует оздоровлению кожи и поднятию местного иммунитета.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-52">
+                            <label data-lang="other-darsonval" class="accordion__heading" for="accordion-heading-52"> -
+                                Дарсонваль</label>
+                            <div class="accordion__content">
+                                <p data-lang="other-darsonval-text"> Дарсонваль является прибором, применяемым не только
+                                    в косметологии, но
+                                    и медицинской
+                                    практике. Во время проведения процедуры дарсонвализации производится воздействие на
+                                    кожу вакуумным стеклянным электродом, переменными импульсными токами высокого
+                                    напряжения, при этом дезинфицируется кожа, повышается тонус и стимулируется
+                                    кровообращение. Частоты аппарата по своим физико-химическим свойствам совпадают с
+                                    человеческими импульсами (поэтому излучение безопасно для организма человека).
+                                    Применение:
+                                    <br>- для избавления от угревой сыпи, гнойничков и воспалений на лице, сосудистых
+                                    “звездочек”
+                                    <br>- для борьбы с застойными пятнами, оставшимися после прыщей
+                                    <br>- для снижения жирности лица, что помогает значительно улучшить внешний вид и
+                                    снизить риск появления новых воспалений на лице
+                                    <br>- для защиты кожи от ранних морщинок и нездорового цвета кожи
+                                    <br>- для помощи при облысении, так как при помощи этой процедуры можно укрепить и
+                                    простимулировать рост волос
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="price">
+        <div class="container">
+            <h1>Прайс - лист</h1>
+            <div class="price__block"><a id="price-href" data-lang="price" href="./img/price.jpg"
+                    data-fancybox="gallery2"><img src="./img/price.jpg" id="price-src" alt="price-list"></a>
+            </div>
+    </section>
+
+
+
+
+
+    <section class="photo-block">
+        <div class="container">
+            <h1>Галерея</h1>
+
+            <div class="photo">
+                <div class="block-photo"><a href="./img/photo_01.jpg" data-fancybox="gallery"><img
+                            src="./img/photo_01.jpg" alt="" class="work2"></a></div>
+                <div class="block-photo"><a href="./img/photo_02.jpg" data-fancybox="gallery"><img
+                            src="./img/photo_02.jpg" alt="" class="work2"></a></div>
+                <div class="block-photo"><a href="./img/photo_03.jpg" data-fancybox="gallery"><img
+                            src="./img/photo_03.jpg" alt="" class="work2"></a></div>
+                <div class="block-photo"><a href="./img/photo_04.jpg" data-fancybox="gallery"><img
+                            src="./img/photo_04.jpg" alt="" class="work2"></a></div>
+                <div class="block-photo"><a href="./img/photo_05.jpg" data-fancybox="gallery"><img
+                            src="./img/photo_05.jpg" alt="" class="work2"></a></div>
+                <div class="block-photo"><a href="./img/photo_06.jpg" data-fancybox="gallery"><img
+                            src="./img/photo_06.jpg" alt="" class="work2"></a></div>
+                <div class="block-photo"><a href="./img/photo_07.jpg" data-fancybox="gallery"><img
+                            src="./img/photo_07.jpg" alt="" class="work2"></a></div>
+                <div class="block-photo"><a href="./img/photo_08.jpg" data-fancybox="gallery"><img
+                            src="./img/photo_08.jpg" alt="" class="work2"></a></div>
+                <div class="block-photo"><a href="./img/photo_02.jpg" data-fancybox="gallery"><img
+                            src="./img/photo_02.jpg" alt="" class="work2"></a></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="reviews">
+        <div class="container">
+            <h1>Отзывы</h1>
+		<!-- Оболочка для демонстрации -->
+            <div class="wrapper">
+                <!-- Контент -->
+    
+                <div class="slider">
+
+
+                    <div class="slider__item filter"><a href="./img/photo_01.jpg" data-fancybox="gallery3"><img src="./img/photo_01.jpg" alt=""></a></div>
+                    <div class="slider__item filter"><a href="./img/photo_02.jpg" data-fancybox="gallery3"><img src="./img/photo_02.jpg" alt=""></a></div>
+                    <div class="slider__item filter"><a href="./img/photo_03.jpg" data-fancybox="gallery3"><img src="./img/photo_03.jpg" alt=""></a></div>
+                    <div class="slider__item filter"><a href="./img/photo_04.jpg" data-fancybox="gallery3"><img src="./img/photo_04.jpg" alt=""></a></div>
+                    <div class="slider__item filter"><a href="./img/photo_05.jpg" data-fancybox="gallery3"><img src="./img/photo_05.jpg" alt=""></a></div>
+                </div>
+                
+                <!-- Подключаем jQuery -->
+                <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                <!-- Подключаем слайдер Slick -->
+                <script src="js/slick.min.js"></script>
+                <!-- Подключаем файл скриптов -->
+                <script src="js/script.js"></script>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="location">
+        <div class="container">
+            <h1 data-lang="find" class="find">Как меня найти</h1>
+
+            <a href="https://goo.gl/maps/NqyR9soT6NXEzDMF8" data-lang="btn" class="button">Нажмите, чтобы проложить
+                маршрут</a>
+
+            <h1 data-lang="look" class="look">Посмотреть на карте:</h1>
+
+            <div class="google_map">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2677.0258883811953!2d35.09622721608564!3d47.85846187853777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc66c5993fb603%3A0xf77ebb6f7199203a!2z0KHQsNC70L7QvSDQutGA0LDRgdC-0YLRiyAi0JvRjtCX0Lgi!5e0!3m2!1sru!2sua!4v1674596252420!5m2!1sru!2sua"
+                    width="350" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="">
+        <div class="container">
+
+
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <h1 data-lang="call" class="call">Позвонить</h1>
+
+            <div class="socials">
+                <a href="tel:+380679520511"><img src="./icons/phone.svg" alt="">
+                </a>
+
+                <p data-lang="profiles" class="profiles">Мои профили в социальных сетях:</p>
+                <div class="footer-icons-row">
+                    <a class="icons" href="https://www.instagram.com/elenalaska_goodskin/">
+                        <img src="./icons/instagram.svg" alt="">
+                    </a>
+                    <a class="icons" href="https://www.facebook.com/profile.php?id=100081874514842">
+                        <img src="./icons/facebook.svg" alt="">
+                    </a>
+                    <a class="icons" href="https://t.me/%2B380679520511">
+                        <img src="./icons/telegram.svg" alt="">
+                    </a>
+
+                    <a class="icons" href="viber://chat?number=%2B380679520511">
+                        <img src="./icons/viber.svg" alt="">
+                    </a>
+                    <!-- <a href="viber://chat?number=%2B4957777777">Ссылка на чат Viber</a> -->
+
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- двухязычность -->
+    <script src="lang.js"></script>
+    <script src="app.js"></script>
+
+
+    <!-- подключение карусели -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+</body>
+
+</html>
